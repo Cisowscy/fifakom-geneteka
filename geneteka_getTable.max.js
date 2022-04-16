@@ -81,8 +81,8 @@
     return {
         typ: tenTyp,
         typNazwa: 's' == tenTyp ? 'aktMA' : 'b' == tenTyp ? 'aktUR' : 'aktZG',
-        nrPozycjiZero: (parseInt($("a[class='paginate_button current']").attr("data-dt-idx")) - 1) * 50,
-        nazwaPliku: `${$("select[id='sel_w']").find("option[selected='selected']").text()}_${$("span[id='select2-sel_rid-container']").attr("title")}_${'s' == tenTyp ? 'aktMA' : 'b' == tenTyp ? 'aktUR' : 'aktZG'}_${$("a[class='paginate_button current']").attr("data-dt-idx")}.${obiekt_zamiast_tabeli ? '({})' : '([])'}.v${new Date().toISOString().replace(/T|\-|\:|\./g, '')}.json`,
+        nrPozycjiZero: (parseInt($($("a[class='paginate_button current']")[0]).text()) - 1) * 50,
+        nazwaPliku: `${$("select[id='sel_w']").find("option[selected='selected']").text()}_${$("span[id='select2-sel_rid-container']").attr("title")}_${'s' == tenTyp ? 'aktMA' : 'b' == tenTyp ? 'aktUR' : 'aktZG'}_${$($("a[class='paginate_button current']")[0]).text()}.${obiekt_zamiast_tabeli ? '({})' : '([])'}.v${new Date().toISOString().replace(/T|\-|\:|\./g, '')}.json`,
         pole:  's' == tenTyp ? kolumny[0] : kolumny[1],        
         /* czytelnoscPliku:  compress : 0 | pretty '\t' or 4 */
         czytelnoscPliku: '\t',
