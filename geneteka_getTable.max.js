@@ -1,18 +1,9 @@
 (function (konfiguracja) {
-    //! let tabelaNowa = {};
     let tabelaNowa = konfiguracja.obiekt_T_czy_Tabela_F ? {} : [];
     (function (aktyCzego, nrZero, aktyCzego_prefix, obiektZamiastTabelicy, nazwaPola) {
         // odczytywanie danych
         function zczytajKomorki(thisRow) {
             function korektaKomorki(a) {
-                /**
-                 * return (
-                 *     "undefined" == typeof a
-                 *         ? (a = null)
-                 *         : ((a = a.trim()), (a = "" == a ? null : a.replace(/\\r/g, "\r  "))),
-                 *     a
-                 * );
-                 */  
                 if (typeof a !== "undefined") {
                     a = a.trim();
                     a = a == "" ? null : a.replace("\r", "\r ");
@@ -55,26 +46,14 @@
                 rekordNowy[aktCzego + "_" + nazwaPola[index]] = zawart;
             });
             return rekordNowy;
-            
-            /**
-             * return (
-             *     (rekordNowy.lp = nrPozycji),
-             *     wierszJSON.forEach((zawart, index) => {
-             *         rekordNowy[aktCzego + "_" + nazwaPola[index]] = zawart;
-             *     }),
-             *     rekordNowy
-             * );
-            */ 
         }
         // zasadnicze przetwarzanie danych
         $(`#table_${aktyCzego} tr`).each((nrWiersza, wierszHTML) => {
-            //! if (nrWiersza != 0) { tabelaNowa[nrZero + nrWiersza] = utworzRekord(zczytajKomorki($(wierszHTML)), nrZero + nrWiersza, aktyCzego_prefix); }
             if (nrWiersza != 0 && obiektZamiastTabelicy) { 
                 tabelaNowa[nrZero + nrWiersza] = utworzRekord(zczytajKomorki($(wierszHTML)), nrZero + nrWiersza, aktyCzego_prefix); 
             } else if (nrWiersza != 0 && !obiektZamiastTabelicy) {
                 tabelaNowa.push(utworzRekord(zczytajKomorki($(wierszHTML)), nrZero + nrWiersza, aktyCzego_prefix));
             }
-            //? 0 != nrWiersza && (tabelaNowa[nrZero + nrWiersza] = utworzRekord(zczytajKomorki($(wierszHTML)), nrZero + nrWiersza, aktyCzego_prefix));
         });
     })(konfiguracja.typ, konfiguracja.nrPozycjiZero, konfiguracja.typNazwa, konfiguracja.obiekt_T_czy_Tabela_F, konfiguracja.pole);
     //  proces przygotowania do zapisu i zapis
