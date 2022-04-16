@@ -34,7 +34,8 @@
             resultat.push(korektaKomorki(thisRow.find("td:eq(9)").find("img[src='images/i.png']").attr("title")));
             resultat.push(korektaKomorki(thisRow.find("td:eq(9)").find("img[src='images/z.png']").attr("title")));
             resultat.push(korektaKomorki(thisRow.find("td:eq(9)").find("img[src='images/z.png']").parent().attr("href")));
-            resultat.push(korektaKomorki(thisRow.find("td:eq(9)").find("img[src='images/a.png']").attr("title")));
+            resultat.push(korektaKomorki(thisRow.find("td:eq(9)").find("img[src='images/a.png']").attr("title")));            
+            resultat.push(korektaKomorki(thisRow.find("td:eq(9)").find("img[src='images/a.png']").parent().attr("href")));
             resultat.push(korektaKomorki(thisRow.find("td:eq(9)").find("img[src='images/s.png']").parent().attr("href")));
             return resultat;
         }
@@ -75,8 +76,8 @@
     let tenTyp = $("ul[class='tabs']").find("li[class='active']").attr("data-key");
     let taStrona = parseInt($($("a[class='paginate_button current']")[0]).text());
     let kolumny = [
-        ['rok', 'przypis_rok', 'aktNr', 'przypis_aktNr', 'imionaMeza', 'przypis_imionaMeza', 'nazwiskoMeza', 'przypis_nazwiskoMeza', 'rodziceMeza', 'przypis_rodziceMeza', 'imionaZony', 'przypis_imionaZony', 'nazwiskoZony', 'przypis_nazwiskoZony', 'rodziceZony', 'przypis_rodziceZony', 'parafia', 'przypis_parafia', 'przypisy', 'archiwum', 'wwwArchiwum', 'odczytywal', 'wwwSkan'],
-        ['rok', 'przypis_rok', 'aktNr', 'przypis_aktNr', 'imiona', 'przypis_imiona', 'nazwisko', 'przypis_nazwisko', 'imionaOJCA', 'przypis_imionaOJCA', 'imionaMATKI', 'przypis_imionaMATKI', 'nazwiskoMATKI', 'przypis_nazwiskoMATKI', 'parafia', 'przypis_parafia', 'miejscowosc', 'przypis_miejscowosc', 'przypisy', 'archiwum', 'wwwArchiwum', 'odczytywal', 'wwwSkan']
+        ['rok', 'przypis_rok', 'aktNr', 'przypis_aktNr', 'imionaMeza', 'przypis_imionaMeza', 'nazwiskoMeza', 'przypis_nazwiskoMeza', 'rodziceMeza', 'przypis_rodziceMeza', 'imionaZony', 'przypis_imionaZony', 'nazwiskoZony', 'przypis_nazwiskoZony', 'rodziceZony', 'przypis_rodziceZony', 'parafia', 'przypis_parafia', 'przypisy', 'archiwum', 'wwwArchiwum', 'odczytywacz', 'wwwOdczytywacza', 'wwwSkan'],
+        ['rok', 'przypis_rok', 'aktNr', 'przypis_aktNr', 'imiona', 'przypis_imiona', 'nazwisko', 'przypis_nazwisko', 'imionaOJCA', 'przypis_imionaOJCA', 'imionaMATKI', 'przypis_imionaMATKI', 'nazwiskoMATKI', 'przypis_nazwiskoMATKI', 'parafia', 'przypis_parafia', 'miejscowosc', 'przypis_miejscowosc', 'przypisy', 'archiwum', 'wwwArchiwum', 'odczytywacz', 'wwwOdczytywacza', 'wwwSkan']
     ];
     let obiekt_zamiast_tabeli = false;
     return {
