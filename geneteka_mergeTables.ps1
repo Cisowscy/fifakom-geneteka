@@ -1,0 +1,1 @@
+Get-ChildItem *.json -path './data' | Where-Object { $_.PsIsContainer -eq $false } | Sort-Object Name | Select-Object -Last 29 | Get-Content -Raw | ConvertFrom-Json | ConvertTo-Json | Set-Content Ukraina_Sambor_aktMA.json
