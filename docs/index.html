@@ -1,75 +1,16 @@
-<!DOCTYPE html>
-<html lang="PL-pl">
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Fifakom—Geneteka</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style type="text/css">@font-face{font-family:'Bona Nova';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50LF7ZCpX7fcHfvIUB5iZJkNKuwL4YeuHg.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Bona Nova';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50LF7ZCpX7fcHfvIUB5iZJtNKuwL4YeuHg.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Bona Nova';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50LF7ZCpX7fcHfvIUB5iZJqNKuwL4YeuHg.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Bona Nova';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50LF7ZCpX7fcHfvIUB5iZJrNKuwL4YeuHg.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Bona Nova';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50LF7ZCpX7fcHfvIUB5iZJmNKuwL4YeuHg.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Bona Nova';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50LF7ZCpX7fcHfvIUB5iZJnNKuwL4YeuHg.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Bona Nova';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50LF7ZCpX7fcHfvIUB5iZJpNKuwL4Ye.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50NF7ZCpX7fcHfvIUB5gaJrPqySLbYf.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50NF7ZCpX7fcHfvIUB5iKJrPqySLbYf.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50NF7ZCpX7fcHfvIUB5j6JrPqySLbYf.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50NF7ZCpX7fcHfvIUB5jqJrPqySLbYf.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50NF7ZCpX7fcHfvIUB5g6JrPqySLbYf.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50NF7ZCpX7fcHfvIUB5gqJrPqySLbYf.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50NF7ZCpX7fcHfvIUB5jKJrPqySLQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50IF7ZCpX7fcHfvIUBxN4d-Ho6fB4wWgEHB.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50IF7ZCpX7fcHfvIUBxN4d-F46fB4wWgEHB.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50IF7ZCpX7fcHfvIUBxN4d-EI6fB4wWgEHB.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50IF7ZCpX7fcHfvIUBxN4d-EY6fB4wWgEHB.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50IF7ZCpX7fcHfvIUBxN4d-HI6fB4wWgEHB.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50IF7ZCpX7fcHfvIUBxN4d-HY6fB4wWgEHB.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Bona Nova';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/bonanova/v10/B50IF7ZCpX7fcHfvIUBxN4d-E46fB4wWgA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v128/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
+<style>.mat-typography{font:400 14px/20px Roboto,Helvetica Neue,sans-serif;letter-spacing:normal}.custom-app-background{background-color:#4e7346}html,body{margin:0;padding:0;height:100%;width:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}body{font-family:Bona Nova,serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:14px}*,*:before,*:after{box-sizing:inherit;-moz-box-sizing:inherit;-webkit-box-sizing:inherit}</style><link rel="stylesheet" href="styles.b0cb6bd2ebfd1fcc.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.b0cb6bd2ebfd1fcc.css"></noscript></head>
+<body class="mat-typography bgcolor custom-app-background">
+  <app-root></app-root>
+<script src="runtime.b78bbf299efa21e0.js" type="module"></script><script src="polyfills.727625ec63e3b3e0.js" type="module"></script><script src="main.b2f87d64cd88907a.js" type="module"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>parantela.info / fifakom-geneteka</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header>
-        <span>
-            <h1><span>
-            <a href="https://parantela.info/fifakom-geneteka/">parantela.info > fifakom-geneteka</a>
-            <a href="https://www.facebook.com/Cisowski.Sas"> (by J.R.Cisowski) </a>
-            <a href="https://github.com/Cisowscy/fifakom-geneteka">--[GitHub]--</a>
-            </span></h1>
-        </span>
-    </header>
-    <main>
-        <div class="opis-geneteki">
-            <p>Geneteka, to prężnie rozwijająca się baza zindeksowanych ksiąg metrykalnych, producentem Geneteki (w
-                rozumieniu ustawy o ochronie baz danych) jest Polskie Towarzystwo Genealogiczne, aczkolwiek sensu largo
-                tworzą ją wolontariusze indeksujący wybrane przez siebie księgi metrykalne. Należy mieć na uwadze iż
-                większośc indeksów zamieszczana jest bez weryfikacji przez jakąkolwiek drugą osobę, nie rzadkie są
-                błędy, nie tylko wadliwe odczytanie imion czy nazwisk, ale zdarzają się błędy wynikłe z roztargnienia, w
-                postaci wpisania rodziców z aktu powyższego, czy pomylone adresy do źródła itp. Jednakowoż nawet w
-                takiej formie ich obecność jest nieoceniona - ułatwiają niekiedy poszukiwania. Należy jednak pamiętać by
-                każdą znalezioną informację przed wykorzystaniem, zweryfikować w źródłowej księdze metrykalnej. Warto
-                też pamiętać iż brak obecności aktu danej osoby w danym indeksowanym roczniku nie musi oznaczać iż osoba
-                tam się nie urodziła, niektóre parafie tworzyły równolegle kilka ksiąg dotyczących różnych dzielnic czy
-                przysiółków, dodatkowo trzeba mieć na uwadze czy indeks powstał na bazie pierwotnej księgi czy też na
-                bazie późniejszego duplikatu,kopista mógł się pomylić,ale i w oryginalnych księgach zdarzają się błędy,
-                skryba czy ksiądz mógł się zasugerować czymś,lub błędnie usłyszeć i źle zapisać. Przez wojny na naszych
-                ziemiach trudno dziś o oryginalne księgi większość stanowią duplikaty duplikatów.</p>
-
-        </div>
-        <div class="geneteka">
-            <iframe class="geneteka-strona" src="https://geneteka.genealodzy.pl/index.php"></iframe>
-            <iframe class="geneteka-mapa"
-                src="https://www.google.com/maps/d/embed?mid=1Ig20G_J_1vRHY4aYPmyLj2VqfiDsLkNJ&ehbc=2E312F"></iframe>
-        </div>
-        <div class="opis-geneteki-2">
-            <p>Należy mieć na uwadze iż nie jest to jedyna tego typu baza, istnieją między innymi “lubgens”, “Poznań
-                Projekt”, “Basia (WTG Gniazdo)” i kilka innych..</p>
-        </div>
-        <br />
-        <div class="opis-fifakom-geneteka">
-            <p>Serwis “Geneteka” działa względnie sprawnie, jednakże przy głębszych badaniach uciążliwe są ukryte
-                informacje pod symbolami literki “i”,aby je poznać każdorazowo trzeba najechać na ikonę,nie można ich
-                ani zaznaczyć ani też skopiować, jak i wyszukać..; Niemożliwym jest też bardziej złożone filtrowanie czy 
-                sortowanie, takie jakie znamy chociażby z Google-Sheet/MS-Excell.</p>
-            <p>Aby temu zaradzić, powstał mój skrypt, Który niestety nie jest  trywialny, pewnie niejeden z was rzeknie 
-                iż jest to zbyt skomplikowane lub wymaga zbyt wielkiego nakładu czasu, jednakże mnie niezwykle ułatwiło, 
-                oszczędzając na analizy mnóstwo czasu.</p>
-
-            <br />
-        </div>
-
-        main
-
-    </main>
-    <footer>
-        <a href="https://github.com/Cisowscy/fifakom-geneteka">fifakom-geneteka (GitHub) </a>
-        <a href="https://geneteka.genealodzy.pl/index.php"> (Geneteka baza)</a>
-        <a
-            href="https://www.google.com/maps/d/embed?mid=1Ig20G_J_1vRHY4aYPmyLj2VqfiDsLkNJ&fbclid=IwAR2vVOYQtYlREveuHyH9aO2iQARu7t6K4gKEj0sCv-RhBPgnEsfrH2rAkmQ&ll=52.12113640095345%2C23.691647334707646&z=7">
-            Geneteka - zakres / mapa</a>
-        </a>
-        </div>
-</body>
-
-</html>
+</body></html>
