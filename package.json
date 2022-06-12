@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build -c=production --source-map=true --stats-json=true --vendor-chunk=true --base-href='https://parantela.info/fifakom-geneteka/'",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,

@@ -1,6 +1,28 @@
-<!--<div class="fiszka-box">
+<!--<div class="map-container" #map></div>-->
+
+<!--
+<div class="fiszka-box">
     <p>komponent txt: {{txt}} </p>
-    <p>komponent idn: {{idn}} </p>
+    <p>komponent idn: {{idn}} </p>  
     
 </div>-->
-<div class="map-container" #map></div>
+<mgl-map
+    [style]="'https://demotiles.maplibre.org/style.json'"
+    [zoom]="[6]"
+    [center]="[22.0, 50.7]"
+    >
+    <mgl-marker #myMarker1 [lngLat]="[23.732623, 53.691267]"> </mgl-marker>
+    <mgl-popup [marker]="myMarker1"> "parafia": "Adamowicze" </mgl-popup>
+    
+    <mgl-marker #myMarker2 [lngLat]="[27.860656, 54.054596]"> </mgl-marker>
+    <mgl-popup [marker]="myMarker2"> "parafia": "Baturyn" </mgl-popup>
+    
+    <mgl-marker #myMarker3 [lngLat]="[28.993584, 53.835374]"> </mgl-marker>
+    <mgl-popup [marker]="myMarker3"> "parafia": "Berezyno" </mgl-popup>
+    
+    <mgl-marker #myMarker4 [lngLat]="[25.305719, 52.316939]"> </mgl-marker>
+    <mgl-popup [marker]="myMarker4"> "parafia": "Bezdzież" </mgl-popup>
+    
+    <mgl-marker #myMarker5 [lngLat]="[25.16755, 53.801267]"> </mgl-marker>
+    <mgl-popup [marker]="myMarker5"> "parafia": "Białohruda" </mgl-popup>
+</mgl-map>
