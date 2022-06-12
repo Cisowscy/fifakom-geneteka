@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    margin: 0; padding: 0; height: 100%; width: 100%;
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    
+    font-family: "Bona Nova", serif;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    overflow: clip;
+    //color: white;
+    //background-color: black;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+}

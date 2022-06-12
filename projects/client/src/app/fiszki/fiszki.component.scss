@@ -1,0 +1,40 @@
+$kolor-w: #6da562;
+$kolor-b: #3d5437;
+$kolor-back: #4e7346;
+$kolor-hover: rgb(73, 35, 17);
+$kolor-active: rgb(160, 57, 74);
+$kolor-alfa-w: rgba(255, 255, 255, 0.05);
+$kolor-alfa-b: rgba(0, 0, 0, 0.05);
+
+@mixin box-hY-wX-exS-inS($box_hY, $box_wX, $box_exS, $box_inS) {
+    margin: $box_exS;
+    padding: $box_inS;
+    height: $box_hY;
+    width: $box_wX;
+}
+
+.fiszki{
+    @include box-hY-wX-exS-inS(100%, 100%, 0, 0);
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: $kolor-back;
+    .fiszki-nav{
+        flex-basis: 154px;
+        background-color: $kolor-alfa-w;
+    }
+    .fiszki-box{   
+        background-color: $kolor-alfa-b;     
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow:row nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 5px;
+        fifak-sztuczka1, fifak-sztuczka2, fifak-sztuczka3, fifak-geneteka-opis, fifak-geneteka-mapa, fifak-geneteka-baza, fifak-geneteka-pomoc{
+            @include box-hY-wX-exS-inS(100%, 100%, 0, 0);
+            overflow: auto;
+        }
+    }
+}

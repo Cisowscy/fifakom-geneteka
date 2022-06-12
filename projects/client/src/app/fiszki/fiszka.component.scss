@@ -1,0 +1,81 @@
+$kolor-w: #6da562;
+$kolor-b: #3d5437;
+$kolor-back: #4e7346;
+$kolor-hover: rgb(73, 35, 17);
+$kolor-active: rgb(160, 57, 74);
+
+.stan_F {
+    background-color: $kolor-w;
+    .wers{
+        color: $kolor-b;
+    }
+}
+
+.stan_T {
+    background-color: $kolor-b;
+    .wers{
+        color: $kolor-w;
+    }
+}
+
+@mixin noselect() {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+@mixin box-border-right($size) {
+    -moz-border-top-right-radius: $size;
+    -webkit-border-top-right-radius : $size;
+            border-top-right-radius : $size;
+    -moz-border-bottom-right-radius: $size;
+    -webkit-border-bottom-right-radius : $size;
+            border-bottom-right-radius : $size;
+}
+
+@mixin box-hY-wX-exS-inS($box_hY, $box_wX, $box_exS, $box_inS) {
+    margin: $box_exS;
+    padding: $box_inS;
+    height: $box_hY;
+    width: $box_wX;
+}
+
+.fiszka{
+    @include box-hY-wX-exS-inS(50px, 150px, 2px, 3px);
+    @include box-border-right(15px);
+    cursor: pointer;
+
+    &:hover{        
+        background-color: $kolor-b;
+        border: solid $kolor-hover 1px;
+        .wers{
+            color: $kolor-w;
+        }
+    }
+
+    &:active{        
+        border: solid $kolor-active 1px;
+    }
+
+    display: grid;
+    gap: 1px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    
+    .wers{
+        @include noselect();
+        margin: 0;
+        padding: 0;
+    }
+    .wers1{
+        //font-size: 17px;
+    }
+    .wers2{
+        //font-size: 14px;
+    }
+    
+}

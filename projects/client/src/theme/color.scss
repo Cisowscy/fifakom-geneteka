@@ -1,0 +1,16 @@
+$kolor-w: #6da562;
+$kolor-b: #3d5437;
+
+.stan_F {
+    background-color: $kolor-w;
+    span{
+        color: $kolor-b;
+    }
+}
+
+.stan_T {
+    background-color: $kolor-b;
+    span{
+        color: $kolor-w;
+    }
+}

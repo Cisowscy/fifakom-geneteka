@@ -1,0 +1,14 @@
+<figure class="fiszki">
+    <div class="fiszki-nav">        
+        <fifak-fiszka *ngFor="let fiszka of fiszki" [id]="fiszka.id" [wers1]="fiszka.wers1" [wers2]="fiszka.wers2" class="krata3"></fifak-fiszka>
+    </div>
+    <div class="fiszki-box"> 
+        <fifak-geneteka-opis  *ngIf="fiszki[0].stan" [txt]="'opis'" [idn]="3"></fifak-geneteka-opis>
+        <fifak-geneteka-mapa  *ngIf="fiszki[1].stan" [txt]="'mapa'" [idn]="4"></fifak-geneteka-mapa>        
+        <fifak-geneteka-baza  *ngIf="fiszki[2].stan" [txt]="'baza'" [idn]="5"></fifak-geneteka-baza>
+        <fifak-geneteka-pomoc *ngIf="fiszki[3].stan" [txt]="'help'" [idn]="6"></fifak-geneteka-pomoc>
+        <fifak-sztuczka1      *ngIf="fiszki[4].stan" [txt]="'tik1'" [idn]="0"></fifak-sztuczka1>
+        <fifak-sztuczka2      *ngIf="fiszki[5].stan" [txt]="'tik2'" [idn]="1"></fifak-sztuczka2>
+        <fifak-sztuczka3      *ngIf="fiszki[6].stan" [txt]="'tik3'" [idn]="2"></fifak-sztuczka3>
+    </div>
+</figure>
