@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+//import { NgxMapLibreGLModule } from '@maplibre/ngx-maplibre-gl';
 
 
 import { AppComponent } from './app.component';
@@ -22,7 +23,8 @@ import { FiszkiComponent, FiszkaComponent, Sztuczka1Component, Sztuczka2Componen
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    //NgxMapLibreGLModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,20 @@
-# FifakomGeneteka
+
+## budowanie storny 
+```powershell
+> ng build -c=production --source-map=true --stats-json=true --vendor-chunk=true --base-href='https://parantela.info/fifakom-geneteka/'
+```
+
+## uzywanie kowertera mapy 
+```powershell
+> cd 'tools/converts/geneteka_GoogleMapsKml-to-JSON'
+> node 'scripts/read_KML_to_JSON.js'
+```
+
+
+
+
+
+# Fifakom Geneteka
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
 
