@@ -1,0 +1,3 @@
+[submodule "tools/converts/geneteka_GoogleMapsKml-to-JSON"]
+	path = tools/converts/geneteka_GoogleMapsKml-to-JSON
+	url = https://github.com/Cisowscy/fifakom-geneteka_GoogleMapsKML-to-JSON.git
